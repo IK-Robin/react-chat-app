@@ -1,0 +1,68 @@
+.fromContainer{
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    .fromWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        align-items: center;
+        flex-direction: column ;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+    
+        
+        -o-border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        .logo{
+            color: #5d5b8d;
+            font-style: 24px;
+            font-weight: bold;
+        }
+        .title{
+            color: #5d5b8d;
+            font-style: 12px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                border: none;
+                padding: 15px;
+                border-bottom: 1px solid  #5d5b8d;
+                &::placeholder{
+                    color:rgb(175, 174, 175);
+                }
+            }
+            label{
+                display: flex;
+                color: #5d5b8d;
+                justify-content: space-around;
+            }
+
+            button{
+                background-color: #7b96ec;
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .goToLogin{
+            color: #5d5b8d;
+            span{
+                color: blue;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

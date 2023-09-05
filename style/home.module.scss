@@ -1,0 +1,37 @@
+$bg :#a7bcff;
+
+
+.home{
+    background-color: $bg;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 80vh;
+        width: 80%;
+        display: flex;
+        overflow: hidden;
+        
+        .sidebar{
+            flex:1;
+            border-right: 1px solid white;
+
+            background-color: #3e3c61;
+        }
+        .chat{
+            flex:2;
+        }
+
+// container 
+} 
+// home 
+}
