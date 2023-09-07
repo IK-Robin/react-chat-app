@@ -1,0 +1,16 @@
+$dark:#2f2d52;
+
+
+
+@mixin profileImage ($w, $h) {
+    .profileimg {
+        width: $w;
+        height: $h;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        object-fit: cover;
+    }
+}

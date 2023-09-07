@@ -1,0 +1,39 @@
+@import '@/style/reusecss.module.scss';
+
+.searchbox{
+
+
+    .searchForm{
+        padding: 10px;
+  
+        input{
+            background-color: transparent;
+            border: none;
+            color: white;
+           outline: none;
+           padding: 10px;
+           &::placeholder{
+            color: lightgray;
+           }
+          
+        }
+        
+    }
+    .userChat{
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      cursor: pointer;
+       &:hover{
+        background-color: $dark;
+       }
+        // use scss function to the profile img 
+        @include profileImage(50px, 50px);
+
+        .userChatInfo{
+
+        }
+    }
+}
