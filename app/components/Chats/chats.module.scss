@@ -1,0 +1,29 @@
+
+@import '@/style/reusecss.module.scss';
+
+
+
+.userChat{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+     &:hover{
+      background-color: $dark;
+     }
+      // use scss function to the profile img 
+      @include profileImage(50px, 50px);
+
+      .userChatInfo{
+        span{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 10px;
+            font-weight: lighter;
+        }
+      }
+  }

@@ -1,0 +1,14 @@
+@import '@/style/reusecss.module.scss';
+.chatInfo{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: $dark;
+    .chatIcon{
+        display: flex;
+       gap: 10px;
+        @include profileImage(24px,24px);
+    }
+}
