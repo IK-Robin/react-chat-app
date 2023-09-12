@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import style from './navbar.module.scss';
 import Image from 'next/image';
@@ -7,7 +9,7 @@ import { auth } from '@/firebase';
 import { getAuth, signOut } from "firebase/auth";
 
 function Navbar() {
-  const logout = async() =>{
+  const logout = () =>{
 
     signOut(auth).then(() => {
       // Sign-out successful.

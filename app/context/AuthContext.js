@@ -7,7 +7,7 @@ import { Value } from "sass";
 export const AuthContext = createContext();
 
 export  const AuthContextProvider = ({children}) =>{
-    const [currentUser, setCurrentUser] = useState(0);
+    const [currentUser, setCurrentUser] = useState({});
 
 
 //     useEffect(() => {

@@ -6,7 +6,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "@/firebase";
 
 function ContextProvider({children}) {
-    const [currentUser, setCurrentUser] = useState(0);
+    const [currentUser, setCurrentUser] = useState({});
 
 
         useEffect(() => {

@@ -4,13 +4,13 @@ import Register from "./[pages]/[home]/register/page";
 
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import Home from "./[pages]/[home]/page";
 export default function App() {
   const {currentUser} =useContext(AuthContext);
-  console.log(currentUser)
 
   return (
     <>
-      <Register />
+      {currentUser.user?<Home/>:<Register/>}
     </>
   );
 }

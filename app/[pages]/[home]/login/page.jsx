@@ -1,9 +1,20 @@
+
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import cosefile from '@/public/next.svg'
 import styles from "../register/register.module.scss"
 import Link from 'next/link'
 function Login() {
+  const logout = async() =>{
+
+    signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
+    
+  }
   return (
     <div className={styles.fromContainer}>
     <div className={styles.fromWrapper}>
